@@ -10,6 +10,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import io.github.bonigarcia.wdm.OperatingSystem;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 
@@ -49,7 +50,7 @@ public class RBIBankExcelDownload {
    // DesiredCapabilities capabilities = DesiredCapabilities.chrome();
     //driver = new ChromeDriver(capabilities);
     //System.setProperty("webdriver.chrome.driver","/home/ramesh/Desktop/JanSampleProject/drivers/chromedriver");
-    WebDriverManager.chromedriver().setup();
+    WebDriverManager.chromedriver().operatingSystem(OperatingSystem.LINUX);
 
 
 
