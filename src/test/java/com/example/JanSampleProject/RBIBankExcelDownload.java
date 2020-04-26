@@ -49,7 +49,7 @@ public class RBIBankExcelDownload {
     options.setExperimentalOption("prefs", preferences);
   // DesiredCapabilities capabilities = DesiredCapabilities.chrome();
   //  driver = new ChromeDriver(capabilities);
-   String path = File.separator + "var"+ File.separator + "lib"+ File.separator + "jenkins"+ File.separator + "workspace"+ File.separator + "RbiIfscXlsx"+ File.separator + "drivers"+File.separator + "chromedriver";
+   String path = File.separator + "var"+ File.separator + "lib"+ File.separator + "jenkins"+ File.separator + "workspace"+ File.separator + "RbiIfscXlsxJob"+ File.separator + "drivers"+File.separator + "chromedriver";
     System.setProperty("webdriver.chrome.driver",path);
 
     //  System.setProperty("webdriver.chrome.driver","/var/lib/jenkins/workspace/RbiIfscXlsx/drivers/chromedriver");
