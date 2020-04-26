@@ -50,7 +50,7 @@ public class RBIBankExcelDownload {
    // DesiredCapabilities capabilities = DesiredCapabilities.chrome();
     //driver = new ChromeDriver(capabilities);
     //System.setProperty("webdriver.chrome.driver","/home/ramesh/Desktop/JanSampleProject/drivers/chromedriver");
-    WebDriverManager.chromedriver().operatingSystem(OperatingSystem.LINUX);
+    WebDriverManager.chromedriver().operatingSystem(OperatingSystem.LINUX).setup();
 
 
 
