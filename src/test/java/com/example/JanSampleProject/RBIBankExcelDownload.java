@@ -10,10 +10,15 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+
 import java.io.File;
 import java.util.Hashtable;
 import java.util.List;
 import java.util.Map;
+
+import javax.jws.WebMethod;
 
 public class RBIBankExcelDownload {
   WebDriver driver=null;
@@ -43,7 +48,11 @@ public class RBIBankExcelDownload {
     options.setExperimentalOption("prefs", preferences);
    // DesiredCapabilities capabilities = DesiredCapabilities.chrome();
     //driver = new ChromeDriver(capabilities);
-    System.setProperty("webdriver.chrome.driver","/home/ramesh/Desktop/JanSampleProject/drivers/chromedriver");
+    //System.setProperty("webdriver.chrome.driver","/home/ramesh/Desktop/JanSampleProject/drivers/chromedriver");
+    WebDriverManager.chromedriver().setup();
+
+
+
       driver=new ChromeDriver(options);
     driver.get("https://m.rbi.org.in/Scripts/bs_viewcontent.aspx?Id=2009");
     List<WebElement> urlEments=driver.findElements(By.xpath("//div[@id='example-min']/div/table/tbody/tr[2]/td/table/tbody/tr/td[2]/a"));
