@@ -52,7 +52,7 @@ public class RBIBankExcelDownload {
   // String path = File.separator + "var"+ File.separator + "lib"+ File.separator + "jenkins"+ File.separator + "workspace"+ File.separator + "RbiIfscXlsxJob"+ File.separator + "drivers"+File.separator + "chromedriver";
     //System.setProperty("webdriver.chrome.driver",path);
 
-   System.setProperty("webdriver.chrome.driver","/var/lib/jenkins/workspace/RbiIfscXlsxJob/drivers/chromedriver");
+   System.setProperty("webdriver.chrome.driver","sudo chmod +x /var/lib/jenkins/workspace/RbiIfscXlsxJob/drivers/chromedriver");
  //   WebDriverManager.chromedriver().operatingSystem(OperatingSystem.LINUX).setup();
 
 
