@@ -27,7 +27,7 @@ public class RBIBankExcelDownload {
   @BeforeTest
   public static void deleteAllXLSFiles() {
      try {
-       File file = new File("/home/ramesh/Nageswar/IFSCBankXLSFile");
+       File file = new File("/var/lib/jenkins/workspace/RbiIfscXlsxJob/drivers");
        String[] myFiles;
        if (file.isDirectory()) {
          myFiles = file.list();
