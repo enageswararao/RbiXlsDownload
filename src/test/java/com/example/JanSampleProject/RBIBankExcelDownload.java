@@ -35,7 +35,7 @@ for (File file : fin.listFiles()) {
     catch(Exception e)   {}
   }
 
- @Testfile
+ @Test
    public void downloadXLSfromRBISite() throws InterruptedException {
     String downloadFilepath = "/home/ramesh/Nageswar/IFSCBankXLSFile";
      String path = System.getProperty("user.dir")+ File.separator + "drivers";
@@ -55,7 +55,7 @@ for (File file : fin.listFiles()) {
     for(int i=0;i<10;i++){
       Thread.sleep(5000);
       urlEments.get(i).click();
-            Thread.sleep(10000);
+       Thread.sleep(10000);
          }
 
   }
