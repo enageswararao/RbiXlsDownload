@@ -48,6 +48,7 @@ public class RBIBankExcelDownload {
     ChromeOptions options = new ChromeOptions();
     options.setExperimentalOption("prefs", preferences);
     String path = System.getProperty("user.dir")+ File.separator + "drivers"+File.separator + "chromedriver";
+     System.setProperty(path);
    System.setProperty("webdriver.chrome.driver",path);
     driver=new ChromeDriver(options);
      
