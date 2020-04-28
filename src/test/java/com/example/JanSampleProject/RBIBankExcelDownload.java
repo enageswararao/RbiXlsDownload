@@ -56,7 +56,7 @@ public class RBIBankExcelDownload {
      
     driver.get("https://m.rbi.org.in/Scripts/bs_viewcontent.aspx?Id=2009");
     List<WebElement> urlEments=driver.findElements(By.xpath("//div[@id='example-min']/div/table/tbody/tr[2]/td/table/tbody/tr/td[2]/a"));
-    for(int i=0;i<2;i++){
+    for(int i=0;i<10;i++){
       Thread.sleep(5000);
       urlEments.get(i).click();
          }
