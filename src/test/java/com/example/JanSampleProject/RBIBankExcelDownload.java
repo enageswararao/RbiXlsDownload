@@ -49,7 +49,7 @@ public class RBIBankExcelDownload {
     options.setExperimentalOption("prefs", preferences);
     //String path = System.getProperty("user.dir")+ File.separator + "drivers"+File.separator + "chromedriver";
      System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
-   System.setProperty("webdriver.chrome.driver",path);
+ //  System.setProperty("webdriver.chrome.driver",path);
     driver=new ChromeDriver(options);
      
     driver.get("https://m.rbi.org.in/Scripts/bs_viewcontent.aspx?Id=2009");
