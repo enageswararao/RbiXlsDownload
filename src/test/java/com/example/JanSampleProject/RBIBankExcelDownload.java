@@ -43,8 +43,9 @@ public class RBIBankExcelDownload {
  @Test
    public void downloadXLSfromRBISite() throws InterruptedException {
     String downloadFilepath = "/home/ramesh/Nageswar/IFSCBankXLSFile";
+     String path = System.getProperty("user.dir")+ File.separator + "drivers";
     Map<String, Object> preferences = new Hashtable<String, Object>();
-    preferences.put("download.default_directory", downloadFilepath);
+    preferences.put("download.default_directory", path);
     ChromeOptions options = new ChromeOptions();
      options.addArguments("--headless");
      options.addArguments("--no-sandbox");
