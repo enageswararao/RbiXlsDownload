@@ -46,6 +46,8 @@ public class RBIBankExcelDownload {
     Map<String, Object> preferences = new Hashtable<String, Object>();
     preferences.put("download.default_directory", downloadFilepath);
     ChromeOptions options = new ChromeOptions();
+     chromeOptions.addArguments("--headless");
+                chromeOptions.addArguments("--no-sandbox");
     options.setExperimentalOption("prefs", preferences);
     //String path = System.getProperty("user.dir")+ File.separator + "drivers"+File.separator + "chromedriver";
      System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
