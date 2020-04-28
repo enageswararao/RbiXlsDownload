@@ -27,9 +27,9 @@ public class RBIBankExcelDownload {
   @BeforeTest
   public static void deleteAllXLSFiles() {
      try {
-       File file = new File("/var/lib/jenkins/workspace/RbiIfscXlsxJob/drivers");
-for (File f : fin.listFiles()) {
-    FileDeleteStrategy.FORCE.delete(f);
+       File fin = new File("/var/lib/jenkins/workspace/RbiIfscXlsxJob/drivers");
+for (File file : fin.listFiles()) {
+    FileDeleteStrategy.FORCE.delete(file);
 }  
      }
     catch(Exception e)   {}
