@@ -9,7 +9,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-org.apache.commons.io.FileDeleteStrategy;
+import org.apache.commons.io.FileDeleteStrategy;
 import io.github.bonigarcia.wdm.OperatingSystem;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -28,8 +28,8 @@ public class RBIBankExcelDownload {
   public static void deleteAllXLSFiles() {
      try {
        File file = new File("/var/lib/jenkins/workspace/RbiIfscXlsxJob/drivers");
-for (File file : fin.listFiles()) {
-    FileDeleteStrategy.FORCE.delete(file);
+for (File f : fin.listFiles()) {
+    FileDeleteStrategy.FORCE.delete(f);
 }  
      }
     catch(Exception e)   {}
